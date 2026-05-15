@@ -36,3 +36,7 @@ lo que queremos __!!!__
   [Ejercicio07](https://editor.p5js.org/IsaCarvacho/sketches/2Nor2BKmb)
   [Ejercicio08](https://editor.p5js.org/IsaCarvacho/sketches/-G8dp1Tr5)
   [Ejercicio08.2](https://editor.p5js.org/IsaCarvacho/sketches/NCtMdJsjL)
+
+### frameCount  
+--> Variable numérica que registra cantidad de fotogramas  
+[Ejercicio09](https://editor.p5js.org/IsaCarvacho/sketches/_XdWsbDYl)
