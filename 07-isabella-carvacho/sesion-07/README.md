@@ -24,4 +24,11 @@ Bucles While son utiles para repetir instrucciones mientras una condición sea v
     ellipse (x, 200, random(300))  
     }  
     [Ejercicio04](https://editor.p5js.org/IsaCarvacho/sketches/U8cKzRa49)  
-    [Ejercicio05](https://editor.p5js.org/IsaCarvacho/sketches/GBymdOXRE)
+    [Ejercicio05](https://editor.p5js.org/IsaCarvacho/sketches/GBymdOXRE)  
+
+## Nested Loops  
+Un loop dentro de otro loop; Un for dentro de otro for  
+for (inicialización variable; condición booleana; actualización){  
+lo que queremos __!!!__  
+* Loop que va primero es el que va adentro
+  [Ejercicio06](https://editor.p5js.org/IsaCarvacho/sketches/KZ6wGkjbb)
