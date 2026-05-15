@@ -32,6 +32,7 @@ for (inicialización variable; condición booleana; actualización){
 lo que queremos __!!!__  
 * Loop que va primero es el que va adentro
 
-   [Ejercicio06](https://editor.p5js.org/IsaCarvacho/sketches/KZ6wGkjbb)
+  [Ejercicio06](https://editor.p5js.org/IsaCarvacho/sketches/KZ6wGkjbb)
   [Ejercicio07](https://editor.p5js.org/IsaCarvacho/sketches/2Nor2BKmb)
   [Ejercicio08](https://editor.p5js.org/IsaCarvacho/sketches/NCtMdJsjL)
+  [Ejercicio08.2](https://editor.p5js.org/IsaCarvacho/sketches/NCtMdJsjL)
