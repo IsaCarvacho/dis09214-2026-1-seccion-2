@@ -1,6 +1,3 @@
-# sesión 04 - 10/04
----
-
 # 🌸 Clase 16/04 - Transformaciones y condicionales 🌸
 
 ### Rotacion de figuras 
