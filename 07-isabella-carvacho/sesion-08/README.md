@@ -298,8 +298,7 @@ lass Ball {
 [p5.js](https://editor.p5js.org/IsaCarvacho/sketches/1LIC-Lk2x)  
 
 #### Errores que no pude solucionar  
-1. Seleccionar tipografía (Intenté poner una tipo juego antiguo)
-2.  Insertar imagen
-3.  Texto de última escena no aparece
-4. A pesar de que los círculos que colisionan los intenté sacar de la función draw, cuando los sacaba desaparecían. Por lo que tuve que dejarlo en draw y quedan con estelas que no dejan el mejor efecto estético al trabajo.
-5. Elementos como map(), translate y otros no los alcancé a poner en el trabajo. 
+1. Insertar imagen
+2. Texto de última escena no aparece
+3. A pesar de que los círculos que colisionan los intenté sacar de la función draw, cuando los sacaba desaparecían. Por lo que tuve que dejarlo en draw y quedan con estelas que no dejan el mejor efecto estético al trabajo.
+4. Elementos como map(), translate y otros no los alcancé a poner en el trabajo. 
