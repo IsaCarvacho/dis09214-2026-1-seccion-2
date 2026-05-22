@@ -14,29 +14,8 @@ O° son 0 radiales
 TWO_PI 360 ̊  
 PI 180 ̊  
 HALF_PI 90 ̊  
-QUARTER_PI 45 ̊  
-
-- Entonces **rotate()** sirve para rotar elementos.  
-- Siempre rota alrededor del punto de origen (0,0).
-- Se recomienda usar con **translate()** y en algunos casos con **rectMode(CENTER);**  
-
-### translate()
-
-Sirve para transladar el punto de origen (0,0) a otra cordenada de mi canvas 
-
-### push() and pop ()
-
-Funciones que trabajan juntas como sistema de memoria temporal para el estilo y transformaciones del lienzo sirve para que los cambios que hagas como mover o rotar no afecten a todo lo que dibujes después.
-
-### scale () 
-Función scale() ajusta la escala del sistema de coordenadas actual por el factor especificado.
-
-
 ---
-
-# Condicionales 
-
-Logica condicional 
+---
 
 ### Expresion booleana:  
 Una expresión booleana es cualquier enunciado, dato o instrucción que, al ser evaluado, solo puede arrojar uno de dos valores posibles:
