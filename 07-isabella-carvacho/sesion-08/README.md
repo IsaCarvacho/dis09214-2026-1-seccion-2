@@ -301,4 +301,5 @@ lass Ball {
 1. Insertar imagen
 2. Texto de última escena no aparece
 3. A pesar de que los círculos que colisionan los intenté sacar de la función draw, cuando los sacaba desaparecían. Por lo que tuve que dejarlo en draw y quedan con estelas que no dejan el mejor efecto estético al trabajo.
-4. Elementos como map(), translate y otros no los alcancé a poner en el trabajo. 
+4. Elementos como map(), translate y otros no los alcancé a poner en el trabajo.
+5. Comentar mis códigos
