@@ -21,4 +21,5 @@ Se crea una variable global (referencia) y la asignamos para que calcule el mín
 
 ### Proporciones  
 | Porporción | Valor |  
-|
+| :--- | ---: |  
+| 50% | windowWidth / 2, windowHeight / 2 |
