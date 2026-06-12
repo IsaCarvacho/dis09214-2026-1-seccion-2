@@ -22,5 +22,9 @@ Se crea una variable global (referencia) y la asignamos para que calcule el mín
 ### Proporciones  
 | Porporción | Valor |  
 | :--- | ---: |  
+| 5% | 0.05 |  
+| 25% | 0.25 |  
 | 50% | windowWidth / 2, windowHeight / 2, 0.5 |  
-| 25% | 0.25 |
+| 75% | 0.75 |  
+
+__Se recomienda usar push() y pop() para aislar elementos y evitar problemas de códigos que afecten a otros__
