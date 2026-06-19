@@ -208,4 +208,4 @@ function draw() {
 }
 
 
-<img width="452" height="476" alt="image" src="https://github.com/user-attachments/assets/cdd7b302-7e4c-47af-b221-943295c93957" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/cdd7b302-7e4c-47af-b221-943295c93957" />
