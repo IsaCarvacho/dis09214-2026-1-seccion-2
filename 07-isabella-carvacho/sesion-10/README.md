@@ -26,5 +26,7 @@ Se crea una variable global (referencia) y la asignamos para que calcule el mín
 | 25% | 0.25 |  
 | 50% | windowWidth / 2, windowHeight / 2, 0.5 |  
 | 75% | 0.75 |  
+| Centro del lienzo | width / 2 , height / 2 |  
+
 
 __Se recomienda usar push() y pop() para aislar elementos y evitar problemas de códigos que afecten a otros__
