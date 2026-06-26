@@ -47,19 +47,18 @@ loadPixels() crea un "puente" temporal para que puedas analizar la
 información de forma masiva y fluida.  
 
 get(x, y) — Lectura (El "Ojo")
-• Función: Va a la coordenada exacta (x, y) y extrae el color de ese píxel.
+• Función: Va a la coordenada exacta (x, y) y extrae el color de ese píxel.  
 • Resultado: Te devuelve un objeto de color o un arreglo con los cuatro canales
-esenciales: [Rojo, Verde, Azul, Alfa] (valores de 0 a 255).
-• Uso extra: Si lo usas sin coordenadas (imagen.get()), sirve para clonar o hacer una
-copia de respaldo completa del lienzo.
-set(x, y, nuevoColor) — Escritura (El "Pincel")
+esenciales: [Rojo, Verde, Azul, Alfa] (valores de 0 a 255).  
+• Uso extra: Si lo usas sin coordenadas (imagen.get()), sirve para clonar o hacer una copia de respaldo completa del lienzo.  
+set(x, y, nuevoColor) — Escritura (El "Pincel")  
 • Función: Va a la coordenada (x, y) e inyecta un color nuevo, reemplazando por
-completo el color que existía ahí.
+completo el color que existía ahí.  
 • Resultado: Modifica el mapa de píxeles en la memoria interna, preparando el nuevo
 aspecto de la imagen.
-updatePixels() — La Actualización
+updatePixels() — La Actualización  
 • Función: Toma todos los cambios que realizaste con set() y los sube de golpe a la
-pantalla.
+pantalla.  
 • ¿Por qué es MUY necesario? set() no dibuja inmediatamente; solo guarda los cambios
 en un borrador secreto. updatePixels() es el comando que efectivamente "publica" y
 renderiza el resultado final en el lienzo para que el usuario pueda verlo.
