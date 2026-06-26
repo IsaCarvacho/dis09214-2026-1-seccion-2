@@ -1,46 +1,50 @@
-# Sesión 09 - 29/05  
+# Sesión 09 - 05/06  
 
-## Diagramas de flujo  
-### Algoritmo  
---> Secuencia de instrucciones paso a paso, lógicas, definidas, ordenadas y finitas que permiten solucionar un problema o realizar una tarea específica.  
-- Precisión: Cada paso debe estar clarísimo (sin ambigüedades)
-- Orden: Los pasos llevan una secuencia lógica.
-- Finitud: Tiene que terminar en algún momento; no puede ser finito.
-- Definición: Si sigues el mismo algoritmo dos veces con los mismos datos, deberías obtener siempre el mismo resultado.
+## Estados y cámara web  
 
-#### Estructura  
---> Input (Entrada), Proceso, Output (Salida)  
+__Paso 1__  
+Crear y definir variable estados  
+Al principio de tu código (fuera de las funciones), debes crear una variable que guarde en qué pantalla nos encontramos. Empezará en 0.  
+--> let estado = 0; // 0 = Inicio, 1 = Experiencia, 2 = Final  
 
-## Arrays (listas)  
-Array: Un contenedor con compartimentos numerados donde puedes guardar múltiples datos bajo un mismo nombre. Es una lista que mantiene varios datos ordenados. Los arreglos (Arrays) son muy útiles para almacenar datos relacionados y pueden contener datos de cualquier tipo.  
---> Como por ejemplo: Tren con vagones (un tren de programación, por así decirlo): el tren en sí es el array, pero cada vagón es un elemento, y cada elemento puede contener lo que quieras.  
-__Sintaxis:__ let nombreArray =[e0, e1, e2, e3, e4, e5];  
---> let Colores = ["red", "orange", "yellow", "green", "blue"];  
-¿Cómo se usan los elementos del Array?  
---> Para llamar a alguno de los valores de mi array vamos a usar: nombreArray [n° elemento ]  
-EJ: background (colores[1]); //Esto pintará el fondo de mi lienzo de color anaranjado.  
-[Ejercicio01](https://editor.p5js.org/IsaCarvacho/sketches/8igAzqKAF) 
-[Ejercicio2](https://editor.p5js.org/IsaCarvacho/sketches/4jMWIhRof)  
-[Ejercicio3](https://editor.p5js.org/IsaCarvacho/sketches/X6B96uT4g)  
-[Ejercicio4](https://editor.p5js.org/IsaCarvacho/sketches/if0svhX9R)  
-[Ejercicio5](https://editor.p5js.org/IsaCarvacho/sketches/q2u-2BM2V)  
+__Paso 2__  
+Configurar el lienzo (function setup)  
+Creamos el lienzo de fondo.  
+--> function setup() {  
+createCanvas(400,400);  
+textAlign(CENTER, CENTER);  
+textSize(24);  
+}  
 
-## Class (molde)  
-Class: Una clase (class) es un molde o plantilla abstracta que define la estructura, los datos (propiedades) y los comportamientos (métodos) que tendrá un tipo de objeto específico.  
---> Como por ejemplo: Plano de diseño de una casa o un cortador de galletas: no es el objeto real en sí, sino las instrucciones empaquetadas para fabricar infinitas
-copias independientes basadas en ese mismo modelo utilizando la palabra clave new.  
-__Sintaxis:__ La sintaxis básica de una clase en JavaScript se estructura siempre en tres partes dentro de un bloque de llaves:  
-1. La palabra clave class + nombre que le quiera dar.
-2. El método constructor (donde se definen las propiedades del objeto usando .this)
-3. Las funciones personalizadas que definen lo que hace el objeto.
+__Paso 3__  
+Crear la estructura del estado (function draw)  
+Aquí usamos un switch. Dependiendo del valor de la variable estado, el programa
+dibujará una cosa u otra.  
 
---> class se escribe afuera y abajo de la función draw();  
-    Luego se crea en el setup();  
-    Y se llama a sus métodos en el draw();  
-[Ejercicio6](https://editor.p5js.org/IsaCarvacho/sketches/35guUxbiT)  
+__Paso 4__   
+Programar visualmente cada estado (funciones propias)  
+Ahora creamos las funciones que inventamos en el paso anterior. Cada una tendrá un diseño y un color diferente para que se note el cambio.  
 
-## Class + Array  
-[Ejercicio7](https://editor.p5js.org/IsaCarvacho/sketches/gN_kHh_I0)  
-[Ejercicio8](https://editor.p5js.org/IsaCarvacho/sketches/Rd8SH_g-Y)  
-[Ejercicio9](https://editor.p5js.org/IsaCarvacho/sketches/lhPjwcTe4)  
-[Ejercicio10](https://editor.p5js.org/IsaCarvacho/sketches/VnHmzxprp) 
+__Paso 5__  
+La lógica del cambio y el reinicio  
+Para pasar de un estado a otro y lograr que vuelva al comienzo, usamos la función
+mousePressed() Cada vez que hagas un clic, la variable aumentará. Si llega a 3 (después del estado 2), volverá a 0.  
+
+### Formas de cambiar de un estado a otro  
+1. Interacción con el teclado
+   1.1. Por barra espaciadora o Enter
+   1.2. Por teclas específicas (ej. Números): Puedes hacer que la tecla 1 te lleve al inicio, la 2 a la experiencia y la 3 al final.
+2. Botones reales en pantalla
+   2. En lugar de hacer clic en cualquier parte de la pantalla, puedes crear un botón real de HTML usando la librería de p5.js. Esto es mucho más profesional para menús.
+3. Zonas de click (Botones dibujados con rect o ellipse)
+  3. Si no quieres usar botones de HTML y prefieres dibujar tus propios botones con rect(), puedes evaluar si el mouse estaba dentro de esa caja al hacer clic.
+4. Interacciones automáticas (Por tiempo)
+   4. Por Tiempo (Temporizador): Ideal para una pantalla de introducción (Splash Screen) que dura 3 segundos y pasa sola al menú.
+  
+## Cámara web  
+--> createCapture(VIDEO);  
+1. Crear la variable para la captura, declarar una variable global que guardará el flujo de video de tu cámara web.
+2. Inicializar la cámara en el function setup() utilizamos el comando especial createCapture(VIDEO) esto le pedirá permiso al navegador para encender la cámara del
+computador. También definimos tamaño con captura.size(x,y); y es muy importante
+agregar captura.hide(); para que esconda el video que HTML pone abajo por default.
+3. Dibujar la cámara en el function draw() usamos la función image(). p5.js toma cada cuadro (frame) de la cámara y lo dibuja en el lienzo en tiempo real.
